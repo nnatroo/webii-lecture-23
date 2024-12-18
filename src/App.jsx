@@ -8,7 +8,7 @@ const App = () => {
   const [showError, setShowError] = useState(false)
 
   useEffect(() => {
-    axios.get(`http://api.weatherapi.com/v1/current.json?key=1b40634a79db4734baf203617210410&q=${inputData}`)
+    axios.get(`https://api.weatherapi.com/v1/current.json?key=1b40634a79db4734baf203617210410&q=${inputData}`)
       .then(function (response) {
         // handle success
         console.log(response.data);
